@@ -3,22 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>savithri</title>
+    <title>Document</title>
+    <style>
+
+      
+      .video-section {
+    position: relative;
+    height: 50vh;
+  
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+h2{
+    text-align:center;
+    text-decoration:wavy;
+    font-style:normal;
+    
+    color:rgb(140, 34, 167)
+    
+    
+}
+.scroll-images {
+    display:flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+}
+.scroll-images img{
+    width: 300px;
+    height: 200px;
+     border-radius: 10px;
+     object-fit: cover;
+     transition: transform 0.3s ease;
+
+}
+.scroll-images img:hover {
+    transform: scale(1.05);
+}
+h1{
+padding: 50px 20px;
+    text-align: center;
+    background-color: #fdf8f3;
+}
+p {
+    text-align:center;
+    font-size: 1.2rem;
+    color: #666;
+}
+button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #f7eded;
+    border-radius: 10px;
+    align:center;
+}
+button:hover {
+    background-color: #e53e3e;
+}
+.menu {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff8f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card span {
+    display: block;
+    font-weight: bold;
+    color: #e53e3e;
+    margin-bottom: 15px;
+}
+
+    </style>
 </head>
 <body>
-    <h3>this is heading</h3>
-    <span> this is a span1</span>
-    
-    <span>this is a span 2</span>
-    <h4> this is heading</h4>
-    <p> this is paragraph</p>
-    <em> this is emphasis tag</em>
-     <b> this is a bold tag </b>
-     <i> this is italic</i><u> jfhdsj</u>
-    <a href =" https://www.starbucks.in/dashboard" target="_blank">click me</a>  <!-- anchro tag for click that specfic link it was redirected to that link.-->
-    <br>
-     <img src="https://i.pinimg.com/736x/12/08/ee/1208ee271a48758746441c61226b37f5.jpg"wiidth="500" height="1000"
-     
 
+    <section class="video-section">
+        <video autoplay muted loop>
+            <source src="video/video2.mp4" type="video/mp4">
+            
+        </video>
+        </section>
+        <h2>welcome to eaters stop</h2>
+        <p>“Taste the happiness.”</p>
+        <button>explore menu</button>
+        <div class="scroll-images">
+            <img src="images/bir1.jpeg" alt="Restaurant Image 1">
+            
+            <img src="images/pe4.webp" alt="Restaurant Image 2">
+            <img src="images/pe5.webp" alt="Restaurant Image 1">
+            <img src="images/pe2.jpeg" alt="Restaurant Image 1">
+            <img src="images/sam.jpeg" alt="Restaurant Image 1">
+           
+        </div>
+         <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-cards">
+            <div class="card">
+                <img src="images/ramen.jpg" alt="Pizza">
+                <h3>Classic ramen</h3>
+                <p>Rich and creamy sauce with fresh herbs</p>
+              
+                <span>₹499</span>
+            </div>
+            <div class="card">
+                <img src="images/rasagulla.jpg" alt="Pasta">
+                <h3>rasagulla</h3>
+                <p>swwetest rasagulla</p>
+                
+                <span>₹199</span>
+            </div>
+            <div class="card">
+                <img src="images/panner.jpg" alt="veg">
+                <h3>panner</h3>
+                <p>biryani with spicy panner</p>
+               
+                <span>₹399</span>
+
+            </div>
+            <div class="card">
+                <img src="images/chicken.jpg" alt="nonveg">
+                <h3>chicken</h3>
+                <p> spicy chicken</p>
+               
+                <span>₹399</span>
+                
+            </div>
+        </div>
+    </section>
+   
 </body>
 </html>
